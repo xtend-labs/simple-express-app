@@ -1,14 +1,11 @@
 const express = require('express')
+// const cors = require('cors')
 const app = express()
 const port = 8080
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World again! Another change. Hi')
-// })
 
-// app.use(express.static('./src/public'));
-
-app.get('/hey', (req, res) => res.send('ho!'))
+//
+app.get('/hey', (req, res) => res.status(200).json('ho!'))
 
 
 app.listen(port, () => {
